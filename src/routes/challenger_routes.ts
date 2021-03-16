@@ -5,5 +5,7 @@ const challenger_Router = Router();
 
 challenger_Router.post("/ordernaLista", challenger_Controllers.challenger_01);
 
+challenger_Router.get("/interlace", challenger_Controllers.challenger_02);
+
 
 export default challenger_Router;
