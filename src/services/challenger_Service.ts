@@ -4,9 +4,6 @@ class Challeger_Service{
 
     challenger_01_Service(data: IChallengerSort){
 
-        console.log(data.lista.salaN);
-        console.log(data.lista.salaS);
-
         const sortSalaN = this.selectSort_Service(data.lista.salaN);
         const sortSalaS = this.selectSort_String_Service(data.lista.salaS);
 
@@ -19,7 +16,7 @@ class Challeger_Service{
     }
     
     challenger_02_Service(data: IChallengerInterlace){
-    
+
         const result = this.interlace({
             intervaloA: data.intervaloA,
             intervaloB: data.intervaloB

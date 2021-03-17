@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import Challenger_Service from "../services/Challenger_Service";
+import challenger_Service from "../services/challenger_Service";
  
 export default new class Challenger_Controllers{
 
@@ -8,7 +8,7 @@ export default new class Challenger_Controllers{
 
             const { lista } = Request.body;
             
-            const result = Challenger_Service.challenger_01_Service({
+            const result = challenger_Service.challenger_01_Service({
                 lista: {
                     salaN: lista.salaN,
                     salaS: lista.salaS
@@ -28,7 +28,7 @@ export default new class Challenger_Controllers{
             
             const { intervaloA, intervaloB } = Request.body;
 
-            const result = Challenger_Service.challenger_02_Service({
+            const result = challenger_Service.challenger_02_Service({
                 intervaloA: intervaloA,
                 intervaloB: intervaloB
             })
